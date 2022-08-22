@@ -1,0 +1,392 @@
+.bg_img {
+    width: 100%;
+}
+
+.divider {
+    background-color: #2b2833;
+    width: 100%;
+    height: 10vw;
+}
+
+.base_view {
+    color: white;
+    position: relative;
+
+    width: 100%;
+    height: 56vw;
+    background-color: #2b2833;
+    overflow: hidden;
+}
+
+.textFullCenter {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.text_import {
+    color: #e8fe47;
+}
+
+/* view_1 CSS */
+.view_1 .all_text {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.view_1 .all_text .view_text {
+    font-size: 6.2vw;
+    font-weight: bold;
+    font-family: NotoSansCJKKR;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.34;
+    letter-spacing: normal;
+    text-align: center;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.view_1 .all_text .view_text_2 {
+    font-size: 1.5vw;
+
+    text-align: center;
+    position: relative;
+    margin-top: 12vw;
+}
+
+/* view_2 CSS */
+.view_2 .view_text {
+    top: 8.5%;
+
+    color: white;
+    font-size: 2.3vw;
+    font-weight: bold;
+}
+
+.view_2 .view_text_2 {
+    top: 17.2%;
+
+    font-size: 1.5vw;
+    font-weight: 500;
+    opacity: 0.6;
+    color: #fff;
+}
+
+.view_2 .instagram {
+    width: 32vw;
+    height: 32vw;
+    position: absolute;
+
+    top: 34%;
+    left: 34%;
+}
+
+.view_2 .kakao {
+    width: 17vw;
+    height: 17vw;
+    position: absolute;
+
+    bottom: -4.7%;
+    right: 19.1%;
+}
+
+.view_2 .youtube {
+    width: 15vw;
+    height: 15vw;
+
+    position: absolute;
+    top: 18.3%;
+    left: 5.4%;
+}
+
+/* view_3 CSS */
+.view_3 .view_text {
+    top: 8.5%;
+
+    color: white;
+    font-size: 2.3vw;
+    font-weight: bold;
+}
+
+.view_3 .list {
+    position: relative;
+    width: 100%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.view_3 #move_avatar {
+    position:relative;
+    width: 60vw;
+    left: 24%;
+    float: left;
+}
+
+.view_3 .img_avatar {
+    position: relative;
+
+    width: 22.3vw;
+    height: 22.3vw;
+    margin-left: -10vw;
+}
+
+.view_3 .img_avatar_blink {
+    width: 22.3vw;
+    height: 22.3vw;
+
+    left: 84vw;
+    visibility: hidden;
+}
+
+.view_3 .scroll_box {
+    position: absolute;
+    bottom: 12%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.scroll_bar_1 {
+    display: flex;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 300%;
+
+    /* Hey browser, use your GPU */
+    transform: translate3d(0, 0, 0);
+    animation: slideshow 10s linear infinite;
+}
+
+.scroll_bar_2 {
+    display: flex;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 300%;
+    animation: slideshow 10s linear infinite;
+}
+
+@keyframes slideshow {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -200%;
+    }
+}
+
+/* view_4 */
+.view_4 .view_text {
+    top: 8.5%;
+
+    line-height: normal;
+    color: white;
+    font-size: 2.3vw;
+    font-weight: bold;
+}
+
+.view_4 .order {
+    position:relative;
+    width: 24vw;
+    visibility: hidden;
+    height:inherit;
+    float: left;
+}
+
+.view_4 .order_1 {
+    position: absolute;
+    bottom: 20%;
+}
+
+.view_4 .order_2 {
+    position: absolute;
+    bottom: 9.2%;
+}
+
+.view_4 .order_3 {
+    position: absolute;
+    bottom: 15.6%;
+}
+
+.view_4 .order_4 {
+    position: absolute;
+    bottom: 9.2%;
+}
+
+.view_4 .img_capture {
+    width: inherit;
+    height: 31vw;
+}
+
+/* view_5 */
+.view_5 .view_text {
+    top: 8.5%;
+
+    line-height: normal;
+    color: white;
+    font-size: 2.3vw;
+    font-weight: bold;
+}
+
+/* view_6 */
+.view_6 .view_text {
+    position: absolute;
+    top: 8.5%;
+
+    line-height: normal;
+    color: white;
+    font-size: 2.3vw;
+    font-weight: bold;
+}
+
+/* view_7 */
+.view_7 {
+    position: relative;
+
+    width: 100%;
+    height: 100vw;
+    background-color: #2b2833;
+    overflow: hidden;
+}
+
+.view_7 .view_text {
+    position: absolute;
+    top: 8.5%;
+
+    line-height: 1.79;
+    letter-spacing: normal;
+    font-weight: 900;
+
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+/* view_8 */
+.view_8 {
+    color: #fff;
+    position: relative;
+
+    width: 100%;
+    height: 140vw;
+    background-color: #2b2833;
+    overflow: hidden;
+}
+
+.view_8 .group {
+    position: relative;
+    width: 100%;
+    height: 40vw;
+}
+
+.view_8 .order_1 {
+    width: 100%;
+    padding-top: 7.4vw;
+    padding-left:64.6%;
+}
+
+.view_8 .img_1 {
+    position: absolute;
+    margin-left: 17%;
+    width: 39vw;
+    height: 39vw;
+}
+
+.view_8 .order_2 {
+    width: 100%;
+    padding-top: 7.4vw;
+    padding-left:20.4%;
+}
+
+.view_8 .img_2 {
+    position: absolute;
+    margin-left: 48.3%;
+    width: 39vw;
+    height: 39vw;
+}
+
+.view_8 .order_3 {
+    width: 100%;
+    padding-top: 7.4vw;
+    padding-left:65.4%;
+}
+
+.view_8 .img_3 {
+    position: absolute;
+    margin-left: 17%;
+    width: 39vw;
+    height: 39vw;
+}
+
+.view_8 .title {
+    font-size: 1.2vw;
+
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.77;
+    letter-spacing: normal;
+}
+.view_8 .content {
+    font-size: 1.2vw;
+    opacity: 0.6;
+
+    margin-top: 1.5vw;
+    font-weight: 500;
+    line-height: 1.77;
+    letter-spacing: normal;    
+}
+
+/* view_9 */
+.view_9 .view_title {
+    width: 100%;
+    text-align: center;
+    opacity: 0.8;
+
+    font-size: 1.2vw;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+
+    top: 7.3%;
+}
+
+.view_9 .view_content {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.8vw;
+
+    font-size: 1.8vw;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.view_9 .group_img {
+    width: 100%;
+    text-align: center;
+
+    margin-top: 3vw;
+}
+
+.view_9 .img_view {
+    width: 22.3vw;
+    display: inline-block;
+    margin-right: 1.2vw;
+}
