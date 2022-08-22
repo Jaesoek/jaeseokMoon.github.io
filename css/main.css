@@ -203,8 +203,8 @@
 }
 
 .view_4 .order {
-    position:relative;
-    width: 24vw;
+    position: absolute;
+    width: 100%;
     visibility: hidden;
     height:inherit;
     float: left;
@@ -217,17 +217,21 @@
 
 .view_4 .order_2 {
     position: absolute;
+    margin-left: 25vw;
     bottom: 9.2%;
 }
 
 .view_4 .order_3 {
     position: absolute;
+    margin-left: 51vw;
     bottom: 15.6%;
 }
 
 .view_4 .order_4 {
     position: absolute;
     bottom: 9.2%;
+    left: 100%;
+    transform: translate(-100%, 0%);
 }
 
 .view_4 .img_capture {
