@@ -18,7 +18,7 @@ gsap.to("#move_avatar", {
     duration: 1,
     scrollTrigger: {
         trigger: ".view_3",
-        start: "center center"
+        start: "center bottom"
     },
     css: { left: "17%" }
 });
@@ -26,7 +26,7 @@ gsap.to("#fade_avatar", {
     duration: 1,
     scrollTrigger: {
         trigger: ".view_3",
-        start: "center center"
+        start: "center bottom"
     },
     className: "img_avatar_blink fadeIn"
 });
@@ -35,16 +35,39 @@ gsap.to("#fade_avatar", {
 gsap.to("#sns_group_1", {
     scrollTrigger: {
         trigger: ".view_4",
-        start: "top center"
+        start: "center bottom"
     },
     className: "slideUp img_capture"
 });
 gsap.to("#sns_group_2", {
     scrollTrigger: {
         trigger: ".view_4",
-        start: "top center"
+        start: "center bottom"
     },
     className: "slideUp img_capture"
+});
+
+// view_8
+gsap.to("#view_8_g_1", {
+    scrollTrigger: {
+        trigger: "#view_8_g_1",
+        start: "center bottom"
+    },
+    css: { opacity: 1, top: "0%"}
+});
+gsap.to("#view_8_g_2", {
+    scrollTrigger: {
+        trigger: "#view_8_g_2",
+        start: "center bottom"
+    },
+    css: { opacity: 1, top: "0%"}
+});
+gsap.to("#view_8_g_3", {
+    scrollTrigger: {
+        trigger: "#view_8_g_3",
+        start: "center bottom"
+    },
+    css: { opacity: 1, top: "0%"}
 });
 
 // // 브라우저창, 보여지는 화면 자체
