@@ -28,7 +28,7 @@ gsap.to("#fade_avatar", {
         trigger: ".view_3",
         start: "center center"
     },
-    className: "img_avatar_blink expandUp"
+    className: "img_avatar_blink fadeIn"
 });
 
 // view_4

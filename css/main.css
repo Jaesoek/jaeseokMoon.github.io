@@ -155,40 +155,43 @@
     position: absolute;
     bottom: 12%;
     width: 100%;
-    overflow: hidden;
 }
 
-.scroll_bar_1 {
+.view_3 .scroll_size {
+    height: 3.6vw;
+    margin-right: 1.2vw;
+}
+
+.view_3 .scroll_bar {
     display: flex;
     position: relative;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 300%;
-
-    /* Hey browser, use your GPU */
-    transform: translate3d(0, 0, 0);
-    animation: slideshow 10s linear infinite;
 }
 
-.scroll_bar_2 {
-    display: flex;
-    position: relative;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 300%;
-    animation: slideshow 10s linear infinite;
+@keyframes marquee_left {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: -286%;
+	}
+}
+.animate_left {
+	width: 572%;
+	animation: marquee_left 30s linear infinite;
 }
 
-@keyframes slideshow {
-    0% {
-        left: 0;
-    }
-
-    100% {
-        left: -200%;
-    }
+@keyframes marquee_right {
+	0% {
+		right: 295%;
+	}
+	100% {
+		right: 0%;
+	}
+}
+.animate_right {
+	width: 590%;
+	animation: marquee_right 30s linear infinite;
+	transform: translate(0, 50%);
 }
 
 /* view_4 */
