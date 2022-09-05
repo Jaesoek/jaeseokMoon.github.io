@@ -5,12 +5,27 @@ gsap.defaults({ ease: "power1", duration: 2 });
 const path = gsap.timeline()
     .to(".youtube", { top: "25.9%", left: "-6%" }, 0)
     .to(".kakao", { top: "25.9%", left: "-6%" }, 0);
-ScrollTrigger.create({
-    animation: path,
-    trigger: ".view_2",
-    start: "top center",
+
+const t1 = gsap.timeline();
+t1.from(".view_2", {opacity: 0})
+.from(".view_2", {
+    scrollTrigger: {
+        animation: path,
+        start: "bottom center",
+        end: "+1000",
+        scrub: true
+    }
+})
+ .from(".view_3", {opacity: 0});
+
+ ScrollTrigger.create({
+    animation: t1,
+    trigger: ".main_container",
+    start: "top top",
+    end: "+20000",
+    pin: true,
     scrub: true,
-    // pin: true
+    anticipatePin: 1
 });
 
 // view_3
