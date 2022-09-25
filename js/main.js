@@ -4,13 +4,18 @@ gsap.defaults({ ease: "power1", duration: 2 });
 // view_2
 const path = gsap.timeline()
     .to(".youtube", { top: "25.9%", left: "-6%" }, 0)
-    .to(".kakao", { top: "25.9%", left: "-6%" }, 0);
+    .to(".naver", { top: "28.7%", left: "78.8%" }, 0)
+    .to(".twitter", { top: "25.9%", left: "-6%" }, 0)
+    .to(".band", { top: "25.9%", left: "-6%" }, 0)
+    .to(".ideas", { top: "25.9%", left: "-6%" }, 0)
+    .to(".ideas_small", { top: "25.9%", left: "-6%" }, 0)
+    .to(".kakao", { top: "63.6%", left: "80%" }, 0);
 ScrollTrigger.create({
     animation: path,
     trigger: ".view_2",
-    start: "top center",
-    scrub: true,
-    // pin: true
+    start: "center center",
+    scrub: 1,
+    pin: true
 });
 
 // view_3
