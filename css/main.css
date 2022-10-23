@@ -249,7 +249,7 @@ html,body {
 }
 .animate_left {
 	width: 572%;
-	animation: marquee_left 30s linear infinite;
+	animation: marquee_left 40s linear infinite;
 }
 
 @keyframes marquee_right {
@@ -262,7 +262,7 @@ html,body {
 }
 .animate_right {
 	width: 590%;
-	animation: marquee_right 30s linear infinite;
+	animation: marquee_right 40s linear infinite;
 	transform: translate(0, 50%);
 }
 
