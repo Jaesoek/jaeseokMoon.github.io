@@ -19,37 +19,64 @@ ScrollTrigger.create({
 });
 
 // view_3
-gsap.to("#move_avatar", {
-    duration: 1,
-    scrollTrigger: {
-        trigger: ".view_3",
-        start: "center bottom"
-    },
-    css: { left: "17%" }
+const view3_anim = gsap.timeline()
+    .to('#fade_avatar', {
+        keyframes: {
+            "0%": { scale: 0, opacity: 0 },
+            "60%": { scale: 1.1 },
+            "80%": { scale: 0.9, opacity: 1 },
+            "100%": { scale: 1, opacity: 1 }
+        },
+        duration: 1
+    }, 0)
+    .to("#move_avatar", {
+        left: "17%",
+        duration: 1
+    }, 0);
+ScrollTrigger.create({
+    trigger: ".view_3",
+    start: "center 70%",
+    onEnter: () => view3_anim.play()
 });
-gsap.to("#fade_avatar", {
-    duration: 1,
-    scrollTrigger: {
-        trigger: ".view_3",
-        start: "center bottom"
-    },
-    className: "img_avatar_blink fadeIn"
+ScrollTrigger.create({
+    trigger: ".view_3",
+    start: "top bottom",
+    onEnter: () => view3_anim.pause(0)
 });
 
 // view_4
-gsap.to("#sns_group_1", {
-    scrollTrigger: {
-        trigger: ".view_4",
-        start: "center bottom"
-    },
-    className: "slideUp img_capture"
+const view4_anim = gsap.timeline()
+    .to('#sns_group_1', {
+        keyframes: {
+            "0%": { transform: 'translateY(100%)', opacity: 1 },
+            "50%": { transform: 'translateY(-8%)' },
+            "65%": { transform: 'translateY(4%)' },
+            "100%": { transform: 'translateY(0%)' }
+        },
+        duration: 1,
+        delay: 0.01
+    }, 0)
+    .to('#sns_group_2', {
+        keyframes: {
+            "0%": { transform: 'translateY(100%)', opacity: 1 },
+            "50%": { transform: 'translateY(-8%)' },
+            "65%": { transform: 'translateY(4%)' },
+            "100%": { transform: 'translateY(0%)' }
+        },
+        duration : 1,
+        delay: 0.2
+    }, 0);
+ScrollTrigger.create({
+    trigger: ".view_4",
+    start: "center 70%",
+    onEnter: () => {
+        view4_anim.play()
+    }
 });
-gsap.to("#sns_group_2", {
-    scrollTrigger: {
-        trigger: ".view_4",
-        start: "center bottom"
-    },
-    className: "slideUp img_capture"
+ScrollTrigger.create({
+    trigger: ".view_4",
+    start: "top bottom",
+    onEnter: () => view4_anim.pause(0)
 });
 
 // view_8

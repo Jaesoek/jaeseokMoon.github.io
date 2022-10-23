@@ -220,7 +220,6 @@ html,body {
     height: 22.3vw;
 
     left: 84vw;
-    visibility: hidden;
 }
 
 .view_3 .scroll_box {
@@ -280,7 +279,6 @@ html,body {
 .view_4 .order {
     position: absolute;
     width: 100%;
-    visibility: hidden;
     height:inherit;
     float: left;
 }
@@ -312,6 +310,7 @@ html,body {
 .view_4 .img_capture {
     width: inherit;
     height: 31vw;
+    opacity: 0;
 }
 
 /* view_5 */
