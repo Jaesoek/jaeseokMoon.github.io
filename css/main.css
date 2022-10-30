@@ -7,7 +7,6 @@ html,body {
 }
 
 .divider {
-    background-color: #2b2833;
     width: 100%;
     height: 10vw;
 }
@@ -18,7 +17,6 @@ html,body {
 
     width: 100%;
     height: 56vw;
-    background-color: #2b2833;
     overflow: hidden;
 }
 
@@ -75,7 +73,6 @@ html,body {
 
     width: 100%;
     height: 100%;
-    background-color: #2b2833;
     overflow: hidden;
 }
 .view_2 .view_text {
@@ -342,7 +339,6 @@ html,body {
 
     width: 100%;
     height: 100vw;
-    background-color: #2b2833;
     overflow: hidden;
 }
 
@@ -367,7 +363,6 @@ html,body {
 
     width: 100%;
     height: 140vw;
-    background-color: #2b2833;
     overflow: hidden;
 }
 

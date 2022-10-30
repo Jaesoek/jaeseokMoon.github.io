@@ -53,18 +53,18 @@ const view4_anim = gsap.timeline()
             "65%": { transform: 'translateY(4%)' },
             "100%": { transform: 'translateY(0%)' }
         },
-        duration: 1,
+        duration: 1.5,
         delay: 0.01
     }, 0)
     .to('#sns_group_2', {
         keyframes: {
             "0%": { transform: 'translateY(100%)', opacity: 1 },
-            "50%": { transform: 'translateY(-8%)' },
-            "65%": { transform: 'translateY(4%)' },
+            "50%": { transform: 'translateY(-12%)' },
+            "65%": { transform: 'translateY(6%)' },
             "100%": { transform: 'translateY(0%)' }
         },
-        duration : 1,
-        delay: 0.2
+        duration : 1.2,
+        delay: 0.6
     }, 0);
 ScrollTrigger.create({
     trigger: ".view_4",
@@ -80,26 +80,21 @@ ScrollTrigger.create({
 });
 
 // view_8
-gsap.to("#view_8_g_1", {
-    scrollTrigger: {
-        trigger: "#view_8_g_1",
-        start: "center bottom"
-    },
-    css: { opacity: 1, top: "0%"}
-});
-gsap.to("#view_8_g_2", {
-    scrollTrigger: {
-        trigger: "#view_8_g_2",
-        start: "center bottom"
-    },
-    css: { opacity: 1, top: "0%"}
-});
-gsap.to("#view_8_g_3", {
-    scrollTrigger: {
-        trigger: "#view_8_g_3",
-        start: "center bottom"
-    },
-    css: { opacity: 1, top: "0%"}
+const group = gsap.utils.toArray('.group');
+group.forEach(view8 => {
+    const anim = gsap.to(view8, { top: 0, opacity: 1, paused: true })
+
+    ScrollTrigger.create({
+        trigger: view8,
+        start: "40% bottom",
+        onEnter: () => anim.play()
+    })
+
+    ScrollTrigger.create({
+        trigger: view8,
+        start: "-80% bottom",
+        onLeaveBack: () => anim.pause(0)
+    })
 });
 
 // // 브라우저창, 보여지는 화면 자체
