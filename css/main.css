@@ -73,6 +73,15 @@ html,body {
 
     width: 100%;
     height: 100%;
+}
+.view_2 .view_content {
+    position:relative;
+    width: 100%;
+    height: 56vw;
+
+    top: 50%;
+    transform: translate(0%, -50%);
+
     overflow: hidden;
 }
 .view_2 .view_text {
