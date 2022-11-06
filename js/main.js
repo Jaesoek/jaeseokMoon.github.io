@@ -5,10 +5,10 @@ gsap.defaults({ ease: "power1", duration: 2 });
 const path = gsap.timeline()
     .to(".youtube", { top: "25.9%", left: "-6%" }, 0)
     .to(".naver", { top: "28.7%", left: "78.8%" }, 0)
-    .to(".twitter", { top: "25.9%", left: "-6%" }, 0)
-    .to(".band", { top: "25.9%", left: "-6%" }, 0)
-    .to(".ideas", { top: "25.9%", left: "-6%" }, 0)
-    .to(".ideas_small", { top: "25.9%", left: "-6%" }, 0)
+    .to(".twitter", { top: "88.6%", left: "20%" }, 0)
+    .to(".band", { top: "50%", left: "10.2%" }, 0)
+    .to(".ideas", { top: "46%", left: "91.8%" }, 0)
+    .to(".ideas_small", { top: "82.2%", left: "-4%" }, 0)
     .to(".kakao", { top: "63.6%", left: "80%" }, 0);
 ScrollTrigger.create({
     animation: path,
