@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
-gsap.defaults({ ease: "power1", duration: 2 });
+gsap.defaults({ ease: "power2", duration: 1 });
 // view_2
 const path = gsap.timeline()
     .to(".youtube", { top: "25.9%", left: "-6%" }, 0)
@@ -13,9 +13,13 @@ const path = gsap.timeline()
 ScrollTrigger.create({
     animation: path,
     trigger: ".view_2",
-    start: "center center",
-    scrub: 1,
+    toggleActions: "restart pause reverse pause",
     pin: true
+});
+ScrollTrigger.create({
+    trigger: ".view_2",
+    start: "top bottom",
+    onEnter: () => path.pause(0)
 });
 
 // view_3
