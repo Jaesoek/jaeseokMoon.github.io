@@ -72,7 +72,7 @@ const view4_anim = gsap.timeline()
     }, 0);
 ScrollTrigger.create({
     trigger: ".view_4",
-    start: "center 70%",
+    start: "20% bottom",
     onEnter: () => {
         view4_anim.play()
     }
