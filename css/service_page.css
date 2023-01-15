@@ -8,6 +8,11 @@ body {
     width: 100%;
 }
 
+#tm-video {
+    width: 100%;
+    height: auto;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -101,5 +106,12 @@ img {
 .service_view_5 {
     position: relative;
     margin-top: 9vw;
-    width: 100%;
 }
+
+/* service_view_5 CSS */
+.service_view_6 {
+    position: relative;
+    margin-top: 9vw;
+    margin-bottom: 9vw;
+}
+
