@@ -1,0 +1,105 @@
+html,
+body {
+    color: white;
+    width: 100%;
+}
+
+.bg_img {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.service_view_1 {
+    width: 100%;
+    height: auto;
+}
+
+/* service_view_2 CSS */
+.service_view_2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 11vw;
+}
+
+/* service_view_3 CSS */
+.service_view_3 {
+    position: relative;
+
+    width: 100%;
+    height: fit-content;
+    margin-top: 9vw;
+}
+
+.service_view_3 .group_1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 9.5vw;
+}
+
+.service_view_3 .item_1 {
+    position: relative;
+    width: 30.6%;
+}
+
+.service_view_3 .item_2 {
+    position: relative;
+    width: 21%;
+}
+
+.service_view_3 .group_2 {
+    display: flex;
+    width: 100%;
+    margin-top: -4vw;
+    justify-content: center;
+    gap: 9.5vw;
+}
+
+.service_view_3 .item_3 {
+    position: relative;
+    width: 31.6%;
+}
+
+.service_view_3 .item_4 {
+    position: relative;
+    width: 21.2%;
+    margin-top: 4vw;
+}
+
+
+/* service_view_4 CSS */
+.service_view_4 {
+    position: relative;
+    overflow: hidden;
+    margin-top: 9vw;
+    width: 100%;
+}
+
+.service_view_4 .scroll_bar {
+    display: flex;
+    position: relative;
+    gap:9vw;
+}
+@keyframes marquee_left {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: -135%;
+	}
+}
+.animate_left {
+	width: 270%;
+	animation: marquee_left 10s linear infinite;
+}
+
+/* service_view_5 CSS */
+.service_view_5 {
+    position: relative;
+    margin-top: 9vw;
+    width: 100%;
+}
