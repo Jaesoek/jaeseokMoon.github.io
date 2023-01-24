@@ -27,7 +27,7 @@ img {
     justify-content: space-around;
 
     height: 80vh;
-    right: 50px;
+    right: 2vw;
     top: 50%;
     transform: translate(0, -50%);
 
@@ -36,15 +36,20 @@ img {
     background-color: #707070;
 }
 
+.floating-menu li {
+    text-align: center;
+    margin-top: 2vh;
+}
+
 .floating-menu a {
     color: #fff;
-    padding: 2vh;
+    padding: 12px;
     font-size: 4vh;
+    text-decoration-line: none;
 }
 
 .active {
     background-color: greenyellow;
-    border-radius: 50%;
 }
 
 /* service_view_1 CSS */
@@ -146,44 +151,214 @@ img {
 /* service_view_6 CSS */
 .service_view_6 {
     display: flex;
-    justify-content: center;
-    margin-top: 9vw;
+    align-items: flex-start;
+    margin-top: 11vw;
+    gap: 12vw;
+}
+
+.service_view_6 .view_6_text {
+    width: 31vw;
+    margin-inline-start: 15.6vw;
+}
+
+.service_view_6 .view_6_img {
+    width: 20.5vw;
 }
 
 /* service_view_7 CSS */
 .service_view_7 {
-    margin-top: 9vw;
+    margin-top: 11vw;
 }
 
 .service_view_7 .view_7 {
-    width: 43vw;
-    margin-top: 4vw;
+    width: 43.7vw;
+    margin-top: 3vw;
     margin-inline-start: 40vw;
 }
 
 /* service_view_8 CSS */
 .service_view_8 {
-    margin-top: 9vw;
+    margin-top: 11vw;
 }
 
 .service_view_8 .view_8 {
-    width: 43vw;
-    margin-top: 4vw;
+    width: 43.7vw;
+    margin-top: 3vw;
     margin-inline-start: 40vw;
 }
 
 /* service_view_9 CSS */
 .service_view_9 {
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
     margin-top: 11vw;
-    margin-bottom:11vw;
 }
 
 .service_view_9 .view_9_text {
-    width: 40vw;
+    width: 39.4vw;
+    margin-inline-start: 15.6vw;
 }
 
 .service_view_9 .view_9_img {
-    width: 37vw;
+    width: 36.6vw;
+}
+
+/* service_view_10 CSS */
+.service_view_10 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 11vw;
+    gap: 3.5vw;
+}
+.view_10_text {
+    width: 43.4vw;
+}
+.view_10_img {
+    width: 20.3vw;
+}
+
+/* service_view_11 CSS */
+.service_view_11 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 9vw;
+}
+
+.service_view_11 .scroll_size {
+    width: 100vw;
+    margin-left: -4.2vw;
+}
+
+.service_view_11 .scroll_bar {
+    display: flex;
+    position: relative;
+}
+@keyframes view_11_left {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: -97.9%;
+	}
+}
+.service_view_11 .animate_left {
+	width: 195.8%;
+	animation: view_11_left 10s linear infinite;
+}
+
+/* service_view_12 CSS */
+.service_view_12 {
+    display: flex;
+    justify-content: center;
+    margin-top: 11vw;
+}
+
+.service_view_12 .view_12_bg {
+    width: 100vw;
+}
+
+.service_view_12 .view_12_text {
+    position: absolute;
+    width: 43.5vw;
+    margin-inline-start: 49.8vw;
+    margin-top: 5.3vw;
+}
+
+/* service_view_13 CSS */
+.service_view_13 {
+    margin-top: 11vw;
+}
+
+.service_view_13 .view_13 {
+    width: 43.7vw;
+    margin-top: 3vw;
+    margin-inline-start: 40vw;
+}
+
+/* service_view_14 CSS */
+.service_view_14 {
+    margin-top: 11vw;
+}
+
+.service_view_14 .view_14 {
+    width: 43.7vw;
+    margin-top: 3vw;
+    margin-inline-start: 40vw;
+}
+
+/* service_view_15 CSS */
+.service_view_15 {
+    margin-top: 11vw;
+}
+
+.service_view_15 .view_15_img {
+    width: 90vw;
+    display: table; margin-left: auto; margin-right: auto;
+}
+
+.service_view_15 .view_15_text {
+    width: 55.2vw;
+    margin-top: 4vw;
+    display: table; margin-left: auto; margin-right: auto;
+}
+
+/* service_view_16 CSS */
+.service_view_16 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 11vw;
+}
+.view_16_img {
+    width: 44.2vw;
+    margin-inline-start: 16.8vw;
+}
+.view_16_text {
+    width: 43.7vw;
+    margin-top: 3vw;
+    margin-inline-start: 40vw;
+}
+
+/* service_view_17 CSS */
+.service_view_17 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 11vw;
+}
+.view_17_img {
+    width: 44.2vw;
+    margin-inline-start: 16.8vw;
+}
+.view_17_text {
+    width: 43.7vw;
+    margin-top: 3vw;
+    margin-inline-start: 40vw;
+}
+
+/* service_view_18 CSS */
+.service_view_18 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 11vw;
+}
+.view_18_img {
+    width: 44.2vw;
+    margin-inline-start: 16.8vw;
+}
+.view_18_text {
+    width: 43.7vw;
+    margin-top: 3vw;
+    margin-inline-start: 40vw;
+}
+
+/* service_view_19 CSS */
+.service_view_19 {
+    margin-top: 11vw;
+    margin-bottom: 30vw;
+}
+
+.service_view_19 .view_19 {
+    width: 73vw;
+    display: table; margin-left: auto; margin-right: auto;
 }
