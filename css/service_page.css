@@ -64,6 +64,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    opacity:0;
 
     height: 740px;
     right: 2vw;
@@ -84,8 +85,8 @@ img {
 
 .floating-menu a {
     color: #fff;
-    padding-left: 29px;
-    padding-right: 29px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 20px;
     text-decoration-line: none;
 }
@@ -162,24 +163,24 @@ img {
 }
 
 .service_view_4 .scroll_size {
-    height: 10vw;
+    width: 100vw;
+    margin-left: 4.2vw;
 }
 
 .service_view_4 .scroll_bar {
     display: flex;
     position: relative;
-    gap:9vw;
 }
 @keyframes marquee_left {
 	0% {
 		left: 0;
 	}
 	100% {
-		left: -113%;
+		left: -105.2%;
 	}
 }
 .animate_left {
-	width: 226%;
+	width: 210.4%;
 	animation: marquee_left 10s linear infinite;
 }
 
@@ -213,7 +214,7 @@ img {
 
 /* service_view_7 CSS */
 .service_view_7 {
-    margin-top: 11vw;
+    margin-top: 10vw;
 }
 
 .service_view_7 .view_7 {
@@ -224,7 +225,7 @@ img {
 
 /* service_view_8 CSS */
 .service_view_8 {
-    margin-top: 11vw;
+    margin-top: 10vw;
 }
 
 .service_view_8 .view_8 {
@@ -286,11 +287,11 @@ img {
 		left: 0;
 	}
 	100% {
-		left: -97.9%;
+		left: -96.9%;
 	}
 }
 .service_view_11 .animate_left {
-	width: 195.8%;
+	width: 193.8%;
 	animation: view_11_left 10s linear infinite;
 }
 
@@ -298,7 +299,7 @@ img {
 .service_view_12 {
     display: flex;
     justify-content: center;
-    margin-top: 11vw;
+    margin-top: 9vw;
 }
 
 .service_view_12 .view_12_bg {
@@ -354,7 +355,7 @@ img {
 .service_view_16 {
     display: flex;
     flex-direction: column;
-    margin-top: 11vw;
+    margin-top: 9vw;
 }
 .view_16_img {
     width: 44.2vw;
@@ -370,7 +371,7 @@ img {
 .service_view_17 {
     display: flex;
     flex-direction: column;
-    margin-top: 11vw;
+    margin-top: 9vw;
 }
 .view_17_img {
     width: 44.2vw;
